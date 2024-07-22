@@ -1,0 +1,53 @@
+/* src/components/Maze.css */
+.maze-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .controls {
+    margin-bottom: 10px;
+  }
+  
+  .maze-grid {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .maze-row {
+    display: flex;
+  }
+  
+  .maze-cell {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+  }
+  
+  .wall, .border {
+    background-color: black;
+  }
+  
+  .entrance {
+    background-color: green;
+  }
+  
+  .exit {
+    background-color: red;
+  }
+  
+  .start-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+  }
+
+  .title {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }

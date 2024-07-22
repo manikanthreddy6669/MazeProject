@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+// src/App.js
+import React, { useState } from 'react';
+import Maze from './components/Maze';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [grid, setGrid] = useState([]);
+  const [entrance, setEntrance] = useState([0, 1]);
+  const [exit, setExit] = useState([49, 48]);
+  const [running, setRunning] = useState(false);
+  const [timerRunning, setTimerRunning] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Maze 
+        grid={grid} 
+        setGrid={setGrid} 
+        entrance={entrance} 
+        setEntrance={setEntrance} 
+        exit={exit} 
+        setExit={setExit} 
+        running={running} 
+        setRunning={setRunning} 
+        timerRunning={timerRunning} 
+        setTimerRunning={setTimerRunning} 
+      />
     </div>
   );
-}
+};
 
 export default App;

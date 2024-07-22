@@ -1,0 +1,32 @@
+/* src/components/Grid.css */
+.grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .wall {
+    background-color: black;
+  }
+  
+  .path {
+    background-color: white;
+  }
+  
+  .entrance {
+    background-color: green;
+  }
+  
+  .exit {
+    background-color: red;
+  }
+  
